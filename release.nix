@@ -11,5 +11,8 @@ let
   };
 in
 {
-  stdenv = pkgs.stdenv;
+  inherit (pkgs)
+    stdenv
+    stdenvNoCC
+    ;
 }
